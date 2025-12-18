@@ -159,6 +159,19 @@
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#00E4F0", GradientType=1 );
   }
+
+  .animate-infinite-scroll {
+    animation: scroll 10s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 body {
