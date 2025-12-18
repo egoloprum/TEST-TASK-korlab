@@ -12,7 +12,7 @@ const logos = [
 
 export const ClientsScroll = ({}) => {
   return (
-    <div className="space-y-10 font-h4 lg:font-h3 my-20 uppercase">
+    <div className="space-y-10 font-h4 lg:font-h3 my-10 md:my-15 lg:my-20 uppercase">
       <h2>500+ клиентов уже с нами</h2>
 
       <section className="flex overflow-hidden">

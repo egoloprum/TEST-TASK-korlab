@@ -25,7 +25,7 @@ export const Button = ({
 }: ButtonProps) => {
   const variants = {
     primary:
-      'bg-blue text-black hover:bg-blue-hover active:shadow-lg active:shadow-blue/50 active:ring-2 active:ring-blue',
+      'bg-blue text-black hover:bg-blue-hover active:shadow-lg active:shadow-blue/50 active:ring-2 active:ring-blue rounded-full!',
     secondary: 'bg-gray-500',
     ghost: 'bg-transparent'
   }
@@ -33,7 +33,7 @@ export const Button = ({
   const generalClass =
     'uppercase px-4 py-2 rounded-xl cursor-pointer font-medium'
 
-  const combinedClass = [variants[variant], generalClass, className]
+  const combinedClass = [generalClass, variants[variant], className]
     .filter(Boolean)
     .join(' ')
 

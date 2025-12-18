@@ -17,7 +17,7 @@ export const Header = ({}) => {
       <Button variant="ghost" className="block lg:hidden pr-0">
         <Menu className="text-(--color-blue)" />
       </Button>
-      <nav className="hidden lg:flex lg:gap-4 xl:gap-8 lg:items-center xl:items-end">
+      <nav className="hidden lg:flex xl:gap-8 lg:items-center xl:items-end">
         <Button variant="ghost" href="/technology" className="font-p5">
           Технология
         </Button>
