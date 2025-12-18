@@ -5,10 +5,14 @@
   --foreground: #ffffff;
 
   --blue: #00e4f0;
+  --blue-hover: #00c1cc;
+  --blue-focus: hsl(183 100% 40%);
+
   --pink: #b38bce;
   --red: #ff4c00;
   --white: #ffffff;
   --black: #000000;
+  --gray: #b0b0b0;
 }
 
 @font-face {
@@ -40,62 +44,120 @@
   --color-foreground: var(--foreground);
 
   --color-blue: var(--blue);
+  --color-blue-hover: var(--blue-hover);
+  --color-blue-focus: var(--blue-focus);
+
   --color-pink: var(--pink);
   --color-red: var(--red);
   --color-white: var(--white);
   --color-black: var(--black);
+  --color-gray: var(--gray);
+}
+
+@utility font-h1 {
+  font-family: 'gratimo', sans-serif;
+  font-size: 50px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+}
+@utility font-h2 {
+  font-family: 'gratimo', sans-serif;
+  font-size: 40px;
+  line-height: 120%;
+}
+@utility font-h3 {
+  font-family: 'gratimo', sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+}
+@utility font-h4 {
+  font-family: 'gratimo', sans-serif;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+}
+@utility font-h5 {
+  font-family: 'gratimo', sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+}
+@utility font-p1 {
+  font-family: 'gratimo', sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+}
+@utility font-p2 {
+  font-family: 'gratimo', sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+}
+@utility font-p3 {
+  font-family: 'gratimo', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+@utility font-p4 {
+  font-family: 'gratimo', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.07em;
+}
+@utility font-p5 {
+  font-family: 'gratimo', sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.09em;
 }
 
 @layer utilities {
-  .font-h1 {
-    font: 'gratimo', sans-serif;
-    font-size: 50px;
-    line-height: 120%;
+  .gradient-red {
+    background: hsla(0, 0%, 0%, 1);
+
+    background: linear-gradient(
+      30deg,
+      hsla(0, 0%, 0%, 1) 40%,
+      hsla(18, 100%, 50%, 1) 90%
+    );
+
+    background: -moz-linear-gradient(
+      30deg,
+      hsla(0, 0%, 0%, 1) 40%,
+      hsla(18, 100%, 50%, 1) 90%
+    );
+
+    background: -webkit-linear-gradient(
+      30deg,
+      hsla(0, 0%, 0%, 1) 40%,
+      hsla(18, 100%, 50%, 1) 90%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FF4C00", GradientType=1 );
   }
-  .font-h2 {
-    font: 'gratimo', sans-serif;
-    font-size: 40px;
-    line-height: 120%;
-  }
-  .font-h3 {
-    font: 'gratimo', sans-serif;
-    font-size: 32px;
-    line-height: 120%;
-  }
-  .font-h4 {
-    font: 'gratimo', sans-serif;
-    font-size: 24px;
-    line-height: 120%;
-  }
-  .font-h5 {
-    font: 'gratimo', sans-serif;
-    font-size: 20px;
-    line-height: 120%;
-  }
-  .font-p1 {
-    font: 'gratimo', sans-serif;
-    font-size: 20px;
-    line-height: 150%;
-  }
-  .font-p2 {
-    font: 'gratimo', sans-serif;
-    font-size: 18px;
-    line-height: 150%;
-  }
-  .font-p3 {
-    font: 'gratimo', sans-serif;
-    font-size: 16px;
-    line-height: 150%;
-  }
-  .font-p4 {
-    font: 'gratimo', sans-serif;
-    font-size: 14px;
-    line-height: 150%;
-  }
-  .font-p5 {
-    font: 'gratimo', sans-serif;
-    font-size: 12px;
-    line-height: 150%;
+
+  .gradient-blue {
+    background: hsla(0, 0%, 0%, 1);
+
+    background: linear-gradient(
+      30deg,
+      hsla(0, 0%, 0%, 1) 40%,
+      hsla(183, 100%, 47%, 1) 90%
+    );
+
+    background: -moz-linear-gradient(
+      30deg,
+      hsla(0, 0%, 0%, 1) 40%,
+      hsla(183, 100%, 47%, 1) 90%
+    );
+
+    background: -webkit-linear-gradient(
+      30deg,
+      hsla(0, 0%, 0%, 1) 40%,
+      hsla(183, 100%, 47%, 1) 90%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#00E4F0", GradientType=1 );
   }
 }
 

@@ -1,10 +1,13 @@
 import { Header } from '@/widgets/Header'
+import { HeroSection } from '@/widgets/Hero'
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main>Home Page</main>
+      <main className="my-10">
+        <HeroSection />
+      </main>
     </>
   )
 }

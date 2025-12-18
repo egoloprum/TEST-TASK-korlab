@@ -9,7 +9,7 @@ export const Header = ({}) => {
         <Logo className="w-45 h-10" />
         <Button
           variant="ghost"
-          className="text-(--color-blue) font-p4 md:font-p5 pr-0"
+          className="text-(--color-blue) font-p4 lg:font-p5 pr-0"
           href="tel:+78006003538">
           + 7 (800) 600-35-38
         </Button>
