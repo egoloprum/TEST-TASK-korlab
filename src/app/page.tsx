@@ -1,3 +1,10 @@
+import { Header } from '@/widgets/Header'
+
 export default function Home() {
-  return <div>hello</div>
+  return (
+    <>
+      <Header />
+      <main>Home Page</main>
+    </>
+  )
 }

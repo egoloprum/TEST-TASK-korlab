@@ -3,6 +3,12 @@
 :root {
   --background: #000000;
   --foreground: #ffffff;
+
+  --blue: #00e4f0;
+  --pink: #b38bce;
+  --red: #ff4c00;
+  --white: #ffffff;
+  --black: #000000;
 }
 
 @font-face {
@@ -32,10 +38,69 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-blue: var(--blue);
+  --color-pink: var(--pink);
+  --color-red: var(--red);
+  --color-white: var(--white);
+  --color-black: var(--black);
+}
+
+@layer utilities {
+  .font-h1 {
+    font: 'gratimo', sans-serif;
+    font-size: 50px;
+    line-height: 120%;
+  }
+  .font-h2 {
+    font: 'gratimo', sans-serif;
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .font-h3 {
+    font: 'gratimo', sans-serif;
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .font-h4 {
+    font: 'gratimo', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .font-h5 {
+    font: 'gratimo', sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .font-p1 {
+    font: 'gratimo', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .font-p2 {
+    font: 'gratimo', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .font-p3 {
+    font: 'gratimo', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .font-p4 {
+    font: 'gratimo', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .font-p5 {
+    font: 'gratimo', sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'gratimo', Arial, Helvetica, sans-serif;
 }

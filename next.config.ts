@@ -1,36 +1,19 @@
 import type { NextConfig } from 'next'
 
-const nextConfig: NextConfig = {
-  turbopack: {},
-
-  webpack(config) {
-    const fileLoaderRule = config.module.rules.find((rule: any) =>
-      rule.test?.test?.('.svg')
-    )
-
-    if (!fileLoaderRule) {
-      return config
-    }
-
-    const resourceQueryNot = fileLoaderRule.resourceQuery?.not ?? []
-
-    config.module.rules.push(
-      {
-        ...fileLoaderRule,
-        test: /\.svg$/i,
-        resourceQuery: /url/
-      },
-      {
-        test: /\.svg$/i,
-        issuer: fileLoaderRule.issuer,
-        resourceQuery: { not: [...resourceQueryNot, /url/] },
-        use: ['@svgr/webpack']
+module.exports = {
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: [
+          {
+            loader: '@svgr/webpack',
+            options: {
+              icon: true
+            }
+          }
+        ],
+        as: '*.js'
       }
-    )
-
-    fileLoaderRule.exclude = /\.svg$/i
-    return config
+    }
   }
-}
-
-export default nextConfig
+} as NextConfig
