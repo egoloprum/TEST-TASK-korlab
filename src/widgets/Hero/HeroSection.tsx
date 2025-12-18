@@ -36,7 +36,7 @@ export const HeroSection = ({}) => {
         </div>
         <div className="relative h-full lg:max-w-140 w-full">
           <Image
-            src="/hero.svg"
+            src="/main-page/hero.svg"
             alt="Hero"
             width={1000}
             height={525}

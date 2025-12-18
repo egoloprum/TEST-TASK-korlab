@@ -1,6 +1,7 @@
 import { ClientsScroll } from '@/widgets/ClientsScroll'
 import { Header } from '@/widgets/Header'
 import { HeroSection } from '@/widgets/Hero'
+import { MonitoringSection } from '@/widgets/Monitoring'
 import { TechnologySection } from '@/widgets/Technology'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <HeroSection />
         <ClientsScroll />
         <TechnologySection />
+        <MonitoringSection />
       </main>
     </>
   )

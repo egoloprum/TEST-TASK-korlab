@@ -9,7 +9,7 @@ export const TechnologySection = ({}) => {
         <div className="relative aspect-video w-full rounded-lg">
           <Image
             className="object-cover rounded-lg"
-            src="/technology.svg"
+            src="/main-page/technology.svg"
             alt="technology"
             fill
             loading="lazy"
@@ -32,7 +32,7 @@ export const TechnologySection = ({}) => {
           <div className="relative aspect-video w-full rounded-lg">
             <Image
               className="object-cover rounded-lg"
-              src="/train-1.svg"
+              src="/main-page/train-1.svg"
               alt="train-1"
               fill
               loading="lazy"
@@ -44,7 +44,7 @@ export const TechnologySection = ({}) => {
           <div className="relative aspect-video w-full rounded-lg">
             <Image
               className="object-cover rounded-lg"
-              src="/train-2.svg"
+              src="/main-page/train-2.svg"
               alt="train-2"
               fill
               loading="lazy"
