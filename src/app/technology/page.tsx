@@ -1,10 +1,15 @@
-import { HeroSection, OperationsSection } from '@/widgets/(technology)'
+import {
+  HeroSection,
+  OperationsSection,
+  SchemesSection
+} from '@/widgets/(technology)'
 
 const Page = ({}) => {
   return (
     <main className="my-10">
       <HeroSection />
       <OperationsSection />
+      <SchemesSection />
     </main>
   )
 }
