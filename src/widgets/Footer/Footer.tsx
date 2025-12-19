@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const Footer = ({}) => {
   return (
-    <footer className="flex flex-col gap-10">
+    <footer className="p-5 flex flex-col gap-10">
       <h4 className="font-h5">Дефолтный подвал</h4>
       <section className="font-p5 tracking-wide grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 text-gray">
         {/* OOO */}

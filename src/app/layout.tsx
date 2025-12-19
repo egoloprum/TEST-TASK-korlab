@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased p-5 md:p-7 lg:p-9">
+      <body className="antialiased ">
         <Header />
         {children}
         <ContactsSection />
