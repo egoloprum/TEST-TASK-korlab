@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const TechnologySection = ({}) => {
   return (
-    <div className="space-y-5 lg:space-y-10 my-10 md:my-15 lg:my-20">
+    <div className="space-y-5 lg:space-y-10 my-10 lg:my-15">
       <h2 className="font-h4 lg:font-h3 uppercase">технология</h2>
       <section className="flex gap-3 flex-col lg:flex-row">
         <div className="relative aspect-video w-full rounded-lg">

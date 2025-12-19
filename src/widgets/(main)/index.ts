@@ -1,5 +1,4 @@
 export * from './ClientsScroll/ClientsScroll'
-export * from './Contacts/ContactsSection'
 export * from './Departments/DepartmentsSection'
 export * from './Feedbacks/FeedbacksSection'
 export * from './Hero/HeroSection'

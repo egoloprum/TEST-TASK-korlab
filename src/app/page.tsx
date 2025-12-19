@@ -1,6 +1,5 @@
 import {
   ClientsScroll,
-  ContactsSection,
   DepartmentsSection,
   FeedbacksSection,
   HeroSection,
@@ -19,7 +18,6 @@ export default function Home() {
       <SpecialistsSection />
       <FeedbacksSection />
       <DepartmentsSection />
-      <ContactsSection />
     </main>
   )
 }
