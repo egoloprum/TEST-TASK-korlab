@@ -1,7 +1,8 @@
 import {
   HeroSection,
   OperationsSection,
-  SchemesSection
+  SchemesSection,
+  SupportSection
 } from '@/widgets/(technology)'
 
 const Page = ({}) => {
@@ -10,6 +11,7 @@ const Page = ({}) => {
       <HeroSection />
       <OperationsSection />
       <SchemesSection />
+      <SupportSection />
     </main>
   )
 }
