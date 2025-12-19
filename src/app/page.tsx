@@ -2,6 +2,7 @@ import { ClientsScroll } from '@/widgets/ClientsScroll'
 import { ContactsSection } from '@/widgets/Contacts'
 import { DepartmentsSection } from '@/widgets/Departments'
 import { FeedbacksSection } from '@/widgets/Feedbacks'
+import { Footer } from '@/widgets/Footer'
 import { Header } from '@/widgets/Header'
 import { HeroSection } from '@/widgets/Hero'
 import { MonitoringSection } from '@/widgets/Monitoring'
@@ -22,6 +23,7 @@ export default function Home() {
         <DepartmentsSection />
         <ContactsSection />
       </main>
+      <Footer />
     </>
   )
 }
