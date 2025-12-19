@@ -8,7 +8,7 @@ import {
 
 const Page = ({}) => {
   return (
-    <main className="my-10 py-20 xl:py-10 px-5">
+    <main className="my-10 pt-20 xl:pt-10 px-5">
       <HeroSection />
       <OperationsSection />
       <SchemesSection />
