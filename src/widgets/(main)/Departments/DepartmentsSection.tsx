@@ -7,21 +7,25 @@ export const DepartmentsSection = ({}) => {
       <h2 className="font-h4 lg:font-h3 uppercase max-w-5xl">
         Подключаем к стабильному интернету по всей России
       </h2>
-      <div className="relative aspect-square md:aspect-video w-full rounded-lg">
-        <Image
-          className="object-fill rounded-lg hidden md:block"
-          src="/main-page/departments-1.svg"
-          alt="departments-1"
-          fill
-          loading="lazy"
-        />
-        <Image
-          className="object-fill rounded-lg block md:hidden"
-          src="/main-page/departments-2.svg"
-          alt="departments-2"
-          fill
-          loading="lazy"
-        />
+      <div
+        className="rounded-lg border-2 border-red p-5 
+                shadow-[0_0_15px_5px_rgba(255,76,0,0.3),inset_0_0_15px_5px_rgba(255,76,0,0.2)]">
+        <div className="relative aspect-16/12 md:aspect-video w-full">
+          <Image
+            className="object-cover rounded-lg hidden md:block"
+            src="/main-page/departments-1.svg"
+            alt="departments-1"
+            fill
+            loading="lazy"
+          />
+          <Image
+            className="object-cover rounded-lg block md:hidden"
+            src="/main-page/departments-2.svg"
+            alt="departments-2"
+            fill
+            loading="lazy"
+          />
+        </div>
       </div>
       <div className="gap-10 justify-center hidden md:flex">
         <div className="flex gap-2 items-center">

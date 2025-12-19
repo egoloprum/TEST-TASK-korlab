@@ -1,12 +1,15 @@
 import { Button } from '@/shared/components'
 import { Logo } from '@/shared/logos'
 import { Menu } from 'lucide-react'
+import Link from 'next/link'
 
 export const Header = ({}) => {
   return (
     <header className="flex justify-between items-start lg:items-center xl:items-end">
       <div className="flex gap-4 md:gap-8 lg:gap-0 xl:gap-12 items-end flex-col sm:flex-row lg:flex-col xl:flex-row">
-        <Logo className="w-45 h-10" />
+        <Link href="/">
+          <Logo className="w-45 h-10" />
+        </Link>
         <Button
           variant="ghost"
           className="text-(--color-blue) font-p4 lg:font-p5 pr-0"
