@@ -69,6 +69,7 @@
   font-family: 'gratimo', sans-serif;
   font-size: 32px;
   line-height: 120%;
+  letter-spacing: 0.04em;
 }
 @utility font-h4 {
   font-family: 'gratimo', sans-serif;
@@ -226,6 +227,27 @@
     100% {
       transform: translateX(-50%);
     }
+  }
+
+  .input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: white !important;
+  }
+  .input:-webkit-autofill::first-line {
+    color: white !important;
+    -webkit-text-fill-color: black !important;
+  }
+  .input:-webkit-autofill,
+  .input:-webkit-autofill:hover,
+  .input:-webkit-autofill:focus,
+  .input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s !important;
+  }
+
+  .input:-moz-autofill {
+    background-color: transparent !important;
+    -webkit-text-fill-color: white !important;
   }
 }
 

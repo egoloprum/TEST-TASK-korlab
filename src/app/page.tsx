@@ -1,4 +1,5 @@
 import { ClientsScroll } from '@/widgets/ClientsScroll'
+import { ContactsSection } from '@/widgets/Contacts'
 import { DepartmentsSection } from '@/widgets/Departments'
 import { FeedbacksSection } from '@/widgets/Feedbacks'
 import { Header } from '@/widgets/Header'
@@ -19,6 +20,7 @@ export default function Home() {
         <SpecialistsSection />
         <FeedbacksSection />
         <DepartmentsSection />
+        <ContactsSection />
       </main>
     </>
   )
