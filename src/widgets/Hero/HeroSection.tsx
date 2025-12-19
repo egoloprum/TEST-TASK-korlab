@@ -1,6 +1,6 @@
 import { Button } from '@/shared/components'
-import { HeroSvg1, HeroSvg2, HeroSvg3 } from '@/shared/logos'
 import Image from 'next/image'
+import { HeroCarousel } from './HeroCarousel'
 
 export const HeroSection = ({}) => {
   return (
@@ -45,20 +45,7 @@ export const HeroSection = ({}) => {
           />
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-3 uppercase font-p1">
-        <div className="border border-blue p-5 rounded-lg w-full flex flex-col justify-between h-55 gradient-blue">
-          <HeroSvg1 className="h-15 w-20" />
-          <p>надежный и быстрый интернет, который не падает</p>
-        </div>
-        <div className="border border-blue p-5 rounded-lg w-full flex flex-col justify-between h-55 gradient-blue">
-          <HeroSvg2 className="h-15 w-25" />
-          <p>КОНТРОЛЬ ВСЕЙ СЕТИ ЧЕРЕЗ ГИБКУЮ НАСТРОЙКУ</p>
-        </div>
-        <div className="border border-blue p-5 rounded-lg w-full flex flex-col justify-between h-55 gradient-blue">
-          <HeroSvg3 className="h-15 w-fit" />
-          <p>Единый инструмент для масштабирования по всей стране</p>
-        </div>
-      </div>
+      <HeroCarousel />
     </section>
   )
 }
