@@ -1,7 +1,7 @@
 'use client'
 
 import { HeroSvg1, HeroSvg2, HeroSvg3 } from '@/shared/logos'
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import { Button } from '@/shared/components'
 
 export const HeroCarousel = () => {
