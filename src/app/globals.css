@@ -186,6 +186,30 @@
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#00E4F0", GradientType=1 );
   }
 
+  .gradient-reverse-blue {
+    background: hsla(0, 0%, 0%, 1);
+
+    background: linear-gradient(
+      210deg,
+      hsla(0, 0%, 0%, 1) 40%,
+      hsla(183, 100%, 47%, 1) 90%
+    );
+
+    background: -moz-linear-gradient(
+      210deg,
+      hsla(0, 0%, 0%, 1) 40%,
+      hsla(183, 100%, 47%, 1) 90%
+    );
+
+    background: -webkit-linear-gradient(
+      210deg,
+      hsla(0, 0%, 0%, 1) 40%,
+      hsla(183, 100%, 47%, 1) 90%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#00E4F0", GradientType=1 );
+  }
+
   .gradient-red-to-blue {
     background: hsla(18, 100%, 50%, 1);
 

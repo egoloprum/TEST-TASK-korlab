@@ -13,14 +13,14 @@ export const SchemesSection = ({}) => {
           <Image
             className="object-fill rounded-lg hidden md:block"
             src="/technology-page/schemes-1.svg"
-            alt="departments-1"
+            alt="schemes-1"
             fill
             loading="lazy"
           />
           <Image
             className="object-fill rounded-lg block md:hidden"
             src="/technology-page/schemes-2.svg"
-            alt="departments-2"
+            alt="schemes-2"
             fill
             loading="lazy"
           />

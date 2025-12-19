@@ -1,4 +1,5 @@
 export * from './Hero/HeroSection'
 export * from './Operations/OperationsSection'
 export * from './Schemes/SchemesSection'
+export * from './Solutions/SolutionsSection'
 export * from './Support/SupportSection'
